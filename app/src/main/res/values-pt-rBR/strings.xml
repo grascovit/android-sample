@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Meu aplicativo</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password_button">Esqueceu a senha?</string>
+    <string name="app_logo">Logo do aplicativo</string>
+</resources>
