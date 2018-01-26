@@ -6,4 +6,6 @@
     <string name="login_button">Login</string>
     <string name="forgot_password_button">Forgot password?</string>
     <string name="app_logo">Application logo</string>
+    <string name="wrong_user_or_password">Wrong user or password</string>
+    <string name="request_error">Oops! Something went wrong. Our engineers have been notified.</string>
 </resources>

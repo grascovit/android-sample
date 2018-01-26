@@ -6,4 +6,6 @@
     <string name="login_button">Login</string>
     <string name="forgot_password_button">Esqueceu a senha?</string>
     <string name="app_logo">Logo do aplicativo</string>
+    <string name="wrong_user_or_password">Email ou senha incorretos</string>
+    <string name="request_error">Oops! Alguma coisa deu errado. Nossos desenvolvedores foram notificados.</string>
 </resources>
