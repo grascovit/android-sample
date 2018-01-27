@@ -1,12 +1,14 @@
 package br.com.codinglab.myapplication.requests;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.widget.ProgressBar;
 
 import br.com.codinglab.myapplication.R;
+import br.com.codinglab.myapplication.activities.ClientsActivity;
 import br.com.codinglab.myapplication.models.UserToken;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,10 +28,12 @@ public class LoginRequest implements Callback<UserToken> {
     @Override
     public void onResponse(@NonNull Call<UserToken> call, @NonNull Response<UserToken> response) {
         progressBar.setVisibility(View.GONE);
+
         int statusCode = response.code();
 
         if (statusCode == 201) {
-            // TODO: Start new activity and store response data
+            Intent intent = new Intent(context, ClientsActivity.class);
+            context.startActivity(intent);
         } else {
             Snackbar.make(view, context.getString(R.string.wrong_user_or_password), Snackbar.LENGTH_SHORT).show();
         }
