@@ -1,4 +1,4 @@
-package br.com.codinglab.myapplication.interfaces;
+package br.com.codinglab.myapplication.services;
 
 import br.com.codinglab.myapplication.models.LoginBody;
 import br.com.codinglab.myapplication.models.UserToken;
