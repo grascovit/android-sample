@@ -1,4 +1,4 @@
-package br.com.codinglab.myapplication;
+package br.com.codinglab.myapplication.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 
+import br.com.codinglab.myapplication.R;
 import br.com.codinglab.myapplication.services.Login;
 import br.com.codinglab.myapplication.models.Auth;
 import br.com.codinglab.myapplication.models.LoginBody;

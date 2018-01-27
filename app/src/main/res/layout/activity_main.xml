@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/greyLight"
     android:id="@+id/mainActivity"
-    tools:context="br.com.codinglab.myapplication.MainActivity">
+    tools:context="br.com.codinglab.myapplication.activities.MainActivity">
 
     <ImageView
         android:id="@+id/imageViewLogo"
