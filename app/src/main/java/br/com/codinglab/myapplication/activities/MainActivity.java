@@ -7,7 +7,7 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import br.com.codinglab.myapplication.R;
-import br.com.codinglab.myapplication.services.Login;
+import br.com.codinglab.myapplication.services.LoginService;
 import br.com.codinglab.myapplication.models.Auth;
 import br.com.codinglab.myapplication.models.LoginBody;
 import br.com.codinglab.myapplication.requests.ApiClient;
@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
     public void loginUser() {
         ProgressBar progressBar = findViewById(R.id.progressBarLogin);
         progressBar.setVisibility(View.VISIBLE);
+
         Auth authBody = new Auth(email.getText().toString(), password.getText().toString());
         LoginBody loginBody = new LoginBody(authBody);
-        Login loginService = ApiClient.getLoginRequest();
+        LoginService loginService = ApiClient.getLoginService();
         LoginRequest loginRequest = new LoginRequest(findViewById(R.id.mainActivity), getApplicationContext(), progressBar);
         loginService.loginUser(loginBody).enqueue(loginRequest);
     }

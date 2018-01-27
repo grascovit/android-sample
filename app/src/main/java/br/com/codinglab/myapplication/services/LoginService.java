@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.POST;
 
-public interface Login {
+public interface LoginService {
     @POST("user_token")
     Call<UserToken> loginUser(@Body LoginBody loginBody);
 }
