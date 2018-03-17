@@ -20,7 +20,10 @@ public class ClientsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_clients);
         ButterKnife.bind(this);
 
-        Intent intent = getIntent();
+        loadClients(getIntent());
+    }
+
+    private void loadClients(Intent intent) {
         int page = 1;
         int userId = intent.getIntExtra("userId", 0);
         String token = intent.getStringExtra("token");

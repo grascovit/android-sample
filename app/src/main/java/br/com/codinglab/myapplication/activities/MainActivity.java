@@ -24,12 +24,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.editTextPassword)
     EditText password;
 
-    @BindString(R.string.wrong_user_or_password)
-    String wrongUserOrPassword;
-
-    @BindString(R.string.request_error)
-    String requestError;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

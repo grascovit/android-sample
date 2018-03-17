@@ -28,11 +28,7 @@ public class ClientRequest implements Callback<List<Client>> {
         this.view = view;
         this.progressBar = progressBar;
         this.context = context;
-
-        recyclerView = view.findViewById(R.id.recyclerViewClients);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setHasFixedSize(true);
+        this.recyclerView = initializeRecyclerView();
     }
 
     @Override
@@ -54,5 +50,13 @@ public class ClientRequest implements Callback<List<Client>> {
     public void onFailure(@NonNull Call<List<Client>> call, @NonNull Throwable t) {
         progressBar.setVisibility(View.GONE);
         Snackbar.make(view, context.getString(R.string.request_error), Snackbar.LENGTH_LONG).show();
+    }
+
+    private RecyclerView initializeRecyclerView() {
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(context);
+        recyclerView = view.findViewById(R.id.recyclerViewClients);
+        recyclerView.setLayoutManager(layoutManager);
+
+        return recyclerView;
     }
 }
