@@ -12,12 +12,11 @@ import br.com.codinglab.myapplication.models.Auth;
 import br.com.codinglab.myapplication.models.LoginBody;
 import br.com.codinglab.myapplication.requests.ApiClient;
 import br.com.codinglab.myapplication.requests.LoginRequest;
-import butterknife.BindString;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.editTextEmail)
     EditText email;
 
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
     }
 
