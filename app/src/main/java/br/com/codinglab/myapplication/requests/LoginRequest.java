@@ -9,6 +9,7 @@ import android.widget.ProgressBar;
 
 import br.com.codinglab.myapplication.R;
 import br.com.codinglab.myapplication.activities.ClientsActivity;
+import br.com.codinglab.myapplication.models.User;
 import br.com.codinglab.myapplication.models.UserToken;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -32,7 +33,11 @@ public class LoginRequest implements Callback<UserToken> {
         int statusCode = response.code();
 
         if (statusCode == 201) {
+            User user = response.body().user;
+            String token = response.body().token;
             Intent intent = new Intent(context, ClientsActivity.class);
+            intent.putExtra("userId", user.id);
+            intent.putExtra("token", token);
             context.startActivity(intent);
         } else {
             Snackbar.make(view, context.getString(R.string.wrong_user_or_password), Snackbar.LENGTH_SHORT).show();
