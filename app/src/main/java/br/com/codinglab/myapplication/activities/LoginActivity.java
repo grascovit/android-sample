@@ -1,5 +1,6 @@
 package br.com.codinglab.myapplication.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -40,5 +41,11 @@ public class LoginActivity extends AppCompatActivity {
         LoginService loginService = ApiClient.getLoginService();
         LoginRequest loginRequest = new LoginRequest(findViewById(R.id.mainActivity), getApplicationContext(), progressBar);
         loginService.loginUser(loginBody).enqueue(loginRequest);
+    }
+
+    @OnClick(R.id.floatingActionButtonNewUser)
+    public void startRegisterActivity() {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 }

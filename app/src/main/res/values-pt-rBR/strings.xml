@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Meu aplicativo</string>
+    <string name="first_name">Nome</string>
+    <string name="last_name">Sobrenome</string>
+    <string name="financial_document">CPF ou CNPJ</string>
     <string name="email">Email</string>
     <string name="password">Senha</string>
     <string name="login_button">Login</string>
