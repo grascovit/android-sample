@@ -3,6 +3,8 @@ package br.com.codinglab.myapplication.requests;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import br.com.codinglab.myapplication.models.Client;
+import br.com.codinglab.myapplication.services.ClientService;
 import br.com.codinglab.myapplication.services.LoginService;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -20,5 +22,9 @@ public class ApiClient {
 
     public static LoginService getLoginService() {
         return API_CLIENT.create(LoginService.class);
+    }
+
+    public static ClientService getClientService() {
+        return API_CLIENT.create(ClientService.class);
     }
 }
