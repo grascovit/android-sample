@@ -3,7 +3,11 @@
     <string name="app_name">My Application</string>
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
-    <string name="financial_document">CPF or CNPJ</string>
+    <string name="type">Account type</string>
+    <string name="personal">Personal</string>
+    <string name="company">Company</string>
+    <string name="cpf">CPF</string>
+    <string name="cnpj">CNPJ</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login_button">Login</string>
@@ -11,5 +15,6 @@
     <string name="forgot_password_button">Forgot password?</string>
     <string name="app_logo">Application logo</string>
     <string name="wrong_user_or_password">Wrong user or password</string>
+    <string name="wrong_data">Something is wrong with the provided data</string>
     <string name="request_error">Oops! Something went wrong. Our engineers have been notified.</string>
 </resources>

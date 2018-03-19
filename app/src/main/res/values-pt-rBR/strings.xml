@@ -3,7 +3,11 @@
     <string name="app_name">Meu aplicativo</string>
     <string name="first_name">Nome</string>
     <string name="last_name">Sobrenome</string>
-    <string name="financial_document">CPF ou CNPJ</string>
+    <string name="type">Tipo da conta</string>
+    <string name="personal">Pessoa física</string>
+    <string name="company">Pessoa jurídica</string>
+    <string name="cpf">CPF</string>
+    <string name="cnpj">CNPJ</string>
     <string name="email">Email</string>
     <string name="password">Senha</string>
     <string name="login_button">Login</string>
@@ -11,5 +15,6 @@
     <string name="forgot_password_button">Esqueceu a senha?</string>
     <string name="app_logo">Logo do aplicativo</string>
     <string name="wrong_user_or_password">Email ou senha incorretos</string>
+    <string name="wrong_data">Há um problema com os dados fornecidos</string>
     <string name="request_error">Oops! Alguma coisa deu errado. Nossos desenvolvedores foram notificados.</string>
 </resources>
